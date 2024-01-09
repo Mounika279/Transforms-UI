@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village UI</title>
+    <style>
+        .container{
+            margin-top:-380px;
+        }
+     .friends{
+        position:relative;
+        left:870px;
+        top:720px;
+     }
+     .uncle{
+        position: relative;
+        top:680px;
+       left:460px;
+     }
+     .clouds{
+        position: relative;
+        top:50vh;
+     }
+     .farmer{
+        position: relative;
+        top:110vh;
+        left:-95vh;
+     }
+     .birds{
+        position: relative;
+        left:-70vh;
+        top:50vh;
+     }
+    
+     .girl1{
+        position: relative;
+        left:-90px;
+        top:700px;
+     }
+    input:checked ~ .friends{
+        translate:-150px;
+        transition:translate 5s 1s ease-in-out;
+    }
+    .uncle{
+       transform:skew(10deg,10deg);
+    }
+   input:checked + .clouds{
+    translate:80px;
+    transition:translate 5s 1s ease-in-out;
+   }
+   input:checked + .farmer{
+    translate:80px;
+    transition:translate 5s 1s ease-in-out;
+   }
+   input:checked + .birds{
+    translate:100px;
+    transition:translate 5s 1s ease-in-out;
+   }
+ .hen{
+    position: relative;
+    top:700px;
+    left:90vh;
+   }
+   input:checked +.hen{
+    translate:100px;
+    transition:translate 3s 1s ease-in;
+   }
+   input[type=radio]{
+    display: inline;
+    position: relative;
+    top:100px;
+   }
+   h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top:-1vh;
+    right:20vh;
+    color: orange;
+    font-size: xx-large;
+   } 
+    </style>
+</head>
+<body>
+    <h1>మా పల్లెటూరు</h1>
+    <div class="container">
+        <div class="main">
+             <input type="radio" id="girl" value="girl" name="village">
+             <img class="friends" src="./friends.png" height="250" width="250">          
+            <input type="radio" id="clouds" value="clouds" name="village">
+            <img class="clouds" src="./clouds-png-13381.png"  height="150" width="200">
+            <img class="girl1" src="./girl.jpg" height="150" width="200">
+            <img class="uncle" src="./uncle.png"  height="150" width="200">
+            <input type="radio" id="farmer" value="farmer" name="village">
+             <img class="farmer" src="./farmer.png" height="250" width="200">
+             <input type="radio" id="birds" value="birds" name="village">
+             <img class="birds" src="./birds.png" height="250" width="200">
+             <input type="radio" id="hen" value="birds" name="village">
+             <img class="hen" src="./cock.png" height="100" width="150"> 
+            <div><b><img src="./villagepic.jpg" height="700" width="1500"></b></div>    
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest UI</title>
+    <style>
+        .friends {
+            position: relative;
+            left: 870px;
+            top: 620px;
+            transition: transform 5s 1s ease-in-out;
+        }
+
+        .uncle {
+            position: relative;
+            top: 580px;
+            left: 460px;
+            transition: transform 5s 1s ease-in-out;
+        }
+
+        .clouds {
+            position: relative;
+            top: 30vh;
+            transition: transform 5s 1s ease-in-out;
+        }
+
+        .farmer {
+            position: relative;
+            top: 100vh;
+            left: -95vh;
+            transition: transform 5s 1s ease-in-out;
+        }
+
+        .birds {
+            position: relative;
+            left: -70vh;
+            top: 40vh;
+            transition: transform 5s 1s ease-in-out;
+        }
+
+        .girl1 {
+            position: relative;
+            left: -90px;
+            top: 600px;
+        }
+
+        input:checked#girl ~ .friends {
+            transform: translateX(-100px);
+        }
+
+        input:checked#girl ~ .uncle {
+            transform: skew(10deg, 10deg);
+        }
+
+        input:checked#clouds ~ .clouds {
+            transform: translateX(50px);
+        }
+
+        input:checked#farmer ~ .farmer {
+            transform: translateX(80px);
+        }
+
+        input:checked#birds ~ .birds {
+            transform: translateX(80px);
+        }
+
+        input:checked#birds ~ .hen {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <input type="radio" id="girl" value="girl" name="movement">
+            <label for="girl">Move Friends</label>
+
+            <input type="radio" id="clouds" value="clouds" name="movement">
+            <label for="clouds">Move Clouds</label>
+
+            <img class="friends" src="./friends.png" height="250" width="250">
+            <img class="clouds" src="./clouds-png-
